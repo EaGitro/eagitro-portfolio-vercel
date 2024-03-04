@@ -28,7 +28,7 @@ export default function Home() {
           <p className="text-sm mb-0.5">(↑ magnificent artwork by こっとりー.)</p>
         </div>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
-          Hey! I'm Ea Gitro. I'm a student, who want to be an engineer.
+          {`Hey! I'm Ea Gitro. I'm a student, who want to be an engineer.`}
         </p>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
           I speak Japanese and English(non-native). he/him.
