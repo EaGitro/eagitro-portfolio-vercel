@@ -1,5 +1,5 @@
 import { Badge, badgeVariants } from "~/components/ui/badge"
-import * as React from "react"
+// import * as React from "react"
 import { cn } from "~/lib/utils"
 import Link from "next/link"
 import { SideMenuValuesProps } from "~/common/types/sideMenuTypes"
@@ -7,6 +7,8 @@ import { ClassNameType } from "~/common/types/className"
 import { sideMenuValues } from "~/common/utils/consts"
 
 import { Avatar, AvatarFallback, AvatarImage } from "~/components/ui/avatar"
+
+import Image from 'next/image'
 
 
 type Props = SideMenuValuesProps & ClassNameType
@@ -36,8 +38,10 @@ export default function SideMenu(props: Props): React.ReactNode {
         >
             <div className="row-start-3 row-span-2">
                 <Avatar>
-                    <AvatarImage src="https://github.com/shadcn.png" />
-                    <AvatarFallback>CN</AvatarFallback>
+                    <AvatarImage src="/eagitro-kotlin.png" >
+                    {/* <Image src="/eagitro-kotlin.png" alt="eagitro's icon"></Image> */}
+                    </AvatarImage>
+                    <AvatarFallback>EaGitro</AvatarFallback>
                 </Avatar>
             </div>
             {/* <Badge>

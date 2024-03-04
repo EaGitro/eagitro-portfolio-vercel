@@ -4,8 +4,8 @@
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 319  66% 11%;
+    --foreground: 30 100% 89%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -94,5 +94,14 @@
   .full-screen{
     height: 100vh;
   }
+
+
+  .list-img{
+    margin-right: 10px;
+      
+  }
+}
+
+@layer custom-list{
 
 }
