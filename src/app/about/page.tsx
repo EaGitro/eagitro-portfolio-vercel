@@ -73,7 +73,7 @@ function techStackImages(techStacks: TechStackType) {
       (
         <Image
           className="block"
-          alt={techStacks[key].alt == undefined ? `${key} icon` : techStacks[key].alt}
+          alt={techStacks[key].alt == undefined ? `${key} icon` : `${techStacks[key].alt}`}
           src={techStacks[key].src}
           width={techStacks[key].width == undefined ? 80 : techStacks[key].width}
           height={techStacks[key].height == undefined ? 80 : techStacks[key].height}
@@ -84,8 +84,8 @@ function techStackImages(techStacks: TechStackType) {
         className={
           (() => {
             let ans = ""
-            if ((techStacks[key].width != undefined && techStacks[key].height != undefined)
-              && (techStacks[key].width / techStacks[key].height > 1.5)) {
+            if ((techStacks[key].width !== undefined && techStacks[key].height !== undefined)
+              && ((techStacks[key].width??1) / (techStacks[key].height??1) > 1.5)) {
               ans += "col-span-2"
             }
             return ans;
