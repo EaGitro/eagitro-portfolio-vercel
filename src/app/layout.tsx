@@ -63,6 +63,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
+      <head>
+      <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={cn("font-contents ", courierpr.variable, kiwiMaru.variable, notojp.variable, ibmpm.variable, /*satisfy.variable,*/ dancingScript.variable, "h-full")}>{children}
       </body>
     </html>

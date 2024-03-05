@@ -1,3 +1,4 @@
+import { sideMenuValues } from "../utils/consts"
 export type SideMenuValuesProps = {
-    sideMenuValue: "Home" | "About" | "Works" | "Articles" | ""
+    sideMenuValue: (typeof sideMenuValues)[number] | ""
 }
