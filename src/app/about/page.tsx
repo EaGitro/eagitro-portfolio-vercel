@@ -130,7 +130,7 @@ export default function AboutPage() {
         }
       </div>
       <p>(The original <a href="https://go.dev/blog/gopher" className={cn(shadcnThemeStyle.a)}>Go gopher</a> was designed by <a href="https://www.instagram.com/reneefrench/" className={cn(shadcnThemeStyle.a)}>Renée French</a>.)</p>
-      <p>("Arduino" is is a registered trademark of the <a href="https://www.arduino.cc/" className={cn(shadcnThemeStyle.a)}>Arduino</a>.)</p>
+      <p>({`"`}Arduino{`"`} is is a registered trademark of the <a href="https://www.arduino.cc/" className={cn(shadcnThemeStyle.a)}>Arduino</a>.)</p>
 
       <h2 className={cn(shadcnThemeUniqueStyle.h2_my5, fontSettings.cursive)}>
         {/* {mathematicalStr(`My favorite things ... 💖`)} */}
@@ -146,12 +146,12 @@ export default function AboutPage() {
         I love to create something. I used to enjoy handcrafts in my childhood, and now I{`'`}m keen on engineering. I{`'`}m glad if I make someone happy with my applications.
       </p>
       <p className={cn(shadcnThemeStyle.p)}>
-        Sometimes, I get absorbed in my thoughts. I love imagining my ideas, for example, "What if combining A and B..?", "Perhaps, X is usable for accomplishing Y..?", and so on.
+        Sometimes, I get absorbed in my thoughts. I love imagining my ideas, for example, {`"`}What if combining A and B..?{`"`}, {`"`}Perhaps, X is usable for accomplishing Y..?{`"`}, and so on.
         There are countless possibilities, and I{`'`}ll see the seeds of favorable outcomes.
       </p>
 
       <p className={cn(shadcnThemeStyle.p)}>
-        I love deep-driving anything. I{`'`}m inclined to search anything I{`'`}m curious about. Sometimes I find what I don{`'`}t know, or I{`'`}m craving for how it works, and then I go on an odyssey to discover "What is it?" and "Why it works?".
+        I love deep-driving anything. I{`'`}m inclined to search anything I{`'`}m curious about. Sometimes I find what I don{`'`}t know, or I{`'`}m craving for how it works, and then I go on an odyssey to discover {`"`}What is it?{`"`} and {`"`}Why it works?{`"`}.
       </p>
 
     </>
