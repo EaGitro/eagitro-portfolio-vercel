@@ -86,7 +86,7 @@
     height: 100%;
   }
 
-  html {
+  html *{
     scrollbar-color: #6969dd #e0e0e0;
     scrollbar-width: thin;
 }
@@ -100,8 +100,6 @@
     margin-right: 10px;
       
   }
-}
-
-@layer custom-list{
 
 }
+

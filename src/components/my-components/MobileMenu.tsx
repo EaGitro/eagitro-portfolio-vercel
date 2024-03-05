@@ -1,5 +1,5 @@
-import { SideMenuValuesProps } from "~/common/types/sideMenuTypes"
-import { ClassNameType } from "~/common/types/className"
+import { SideMenuValuesProps } from "~/common/types/propsTypes"
+import { ClassNameType } from "~/common/types/otherUtilTypes"
 import SideMenu from "./SideMenu"
 
 

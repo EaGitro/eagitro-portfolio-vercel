@@ -7,7 +7,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -20,7 +20,8 @@ const config = {
     extend: {
       fontFamily: {
 
-        "contents":["var(--font-courierpr)", "var(--font-ibmpm)", "var(--font-notojp)"],
+        "contents": ["var(--font-courierpr)", "var(--font-ibmpm)", "var(--font-kiwi-maru)", "var(--font-notojp)"],
+        "cursive":[/*"var(--font-satisfy)",*/ "var(--font-dancing)"]
 
       },
       colors: {

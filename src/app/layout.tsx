@@ -1,4 +1,4 @@
-import { Noto_Sans_JP, IBM_Plex_Mono, Courier_Prime } from "next/font/google";
+import { Noto_Sans_JP, IBM_Plex_Mono, Courier_Prime, Kiwi_Maru, Satisfy, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import { cn } from "~/lib/utils"
 
@@ -12,6 +12,13 @@ const notojp = Noto_Sans_JP({
   display: "swap"
 });
 
+const kiwiMaru = Kiwi_Maru({
+  weight: ["400", "500"],
+  subsets: ["latin"],
+  variable: "--font-kiwi-maru",
+  display: "swap"
+})
+
 const ibmpm = IBM_Plex_Mono({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -23,6 +30,20 @@ const courierpr = Courier_Prime({
   weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-courierpr",
+  display: "swap"
+})
+
+const satisfy = Satisfy({
+  weight: ["400", "400"],
+  subsets: ["latin"],
+  variable: "--font-satisfy",
+  display: "swap"
+})
+
+const dancingScript = Dancing_Script({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-dancing",
   display: "swap"
 })
 
@@ -42,7 +63,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("font-contents ", courierpr.variable, notojp.variable, ibmpm.variable, "full-screen")}>{children}
+      <body className={cn("font-contents ", courierpr.variable, kiwiMaru.variable, notojp.variable, ibmpm.variable, /*satisfy.variable,*/ dancingScript.variable ,"full-screen")}>{children}
       </body>
     </html>
   );
