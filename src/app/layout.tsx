@@ -62,8 +62,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={cn("font-contents ", courierpr.variable, kiwiMaru.variable, notojp.variable, ibmpm.variable, /*satisfy.variable,*/ dancingScript.variable ,"full-screen")}>{children}
+    <html lang="en" className="h-full">
+      <body className={cn("font-contents ", courierpr.variable, kiwiMaru.variable, notojp.variable, ibmpm.variable, /*satisfy.variable,*/ dancingScript.variable, "h-full")}>{children}
       </body>
     </html>
   );

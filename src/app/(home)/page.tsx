@@ -39,7 +39,7 @@ export default function Home() {
           I love creating something, and deep-driving anything!
         </p>
       </div>
-      <div className="grid grid-cols-3 my-20 gap-4 content-center items-center">
+      <div className="grid grid-cols-3 pt-20 gap-4 content-center items-center">
         <a href="https://github.com/EaGitro"><Image src={"/ea-default.png"} alt="ea's default icon" width={120} height={120} className=""></Image></a>
         <div className="col-span-2 grid grid-rows-3">
 
