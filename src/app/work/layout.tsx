@@ -8,7 +8,7 @@ export default function AboutLayout({
 }>) {
     return (
         <>
-            <PageLayoutComp sideMenuValue="Works">{children}</PageLayoutComp>
+            <PageLayoutComp sideMenuValue="Work">{children}</PageLayoutComp>
         </>
     )
 }

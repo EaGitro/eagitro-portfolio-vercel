@@ -1,7 +1,7 @@
-export default function AboutPage() {
+export default function ArticlesPage() {
     return (
       <>
-       <p>{`{Works}`}</p>
+       <p>{`{Writing}`}</p>
        <p>under construction</p>
       </>
     );

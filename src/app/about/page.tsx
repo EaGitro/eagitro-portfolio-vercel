@@ -34,7 +34,7 @@ export default function AboutPage() {
         <TechStackImages />
       </div>
       <p>(The original <a href="https://go.dev/blog/gopher" className={cn(shadcnThemeStyle.a)}>Go gopher</a> was designed by <a href="https://www.instagram.com/reneefrench/" className={cn(shadcnThemeStyle.a)}>Renée French</a>.)</p>
-      <p>({`"`}Arduino{`"`} is is a registered trademark of the <a href="https://www.arduino.cc/" className={cn(shadcnThemeStyle.a)}>Arduino</a>.)</p>
+      <p>({`"`}Arduino{`"`} is a registered trademark of the <a href="https://www.arduino.cc/" className={cn(shadcnThemeStyle.a)}>Arduino</a>.)</p>
 
       <h2 className={cn(shadcnThemeUniqueStyle.h2_my5, fontSettings.cursive)}>
         {/* {mathematicalStr(`My favorite things ... 💖`)} */}
