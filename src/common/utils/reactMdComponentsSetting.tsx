@@ -1,4 +1,4 @@
-import {H1, H2, H3, H4, P, Ul, Blockquote, A, } from '~/common/utils/reactMdElmConfig'
+import {H1, H2, H3, H4, P, Ul, Blockquote, A, Img} from '~/common/utils/reactMdElmConfig'
 
 export const defaultComponentsSetting = {
     h1:H1,
@@ -9,5 +9,6 @@ export const defaultComponentsSetting = {
     ul:Ul,
     blockquote:Blockquote,
     a:A,
+    img: Img
 }
 

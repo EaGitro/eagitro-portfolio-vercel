@@ -7,7 +7,7 @@ export default function AboutPage() {
     
     return (
         <>
-            <h1 className={cn(shadcnThemeStyleArticle.h1)}>{`{Work}`}</h1>
+            <h1 className={cn(shadcnThemeStyleArticle.h1)}>{`{ Work }`}</h1>
             <h2 className={cn(shadcnThemeStyleArticle.h2)}>
                 Here are some of my projects. ↓
             </h2>

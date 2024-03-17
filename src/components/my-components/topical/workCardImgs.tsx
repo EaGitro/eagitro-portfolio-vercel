@@ -23,6 +23,7 @@ type workCardType = {
         height?: number;
     };
     link: string;
+    gitLink?:string;
 }
 
 export const workCards: Array<workCardType> = [
@@ -33,7 +34,8 @@ export const workCards: Array<workCardType> = [
             src: "/work-card-imgs/URLKeepPlus_capture.GIF"
 
         },
-        link: "https://github.com/EaGitro/URLKeepPlus" // TODO: "/work/urlkeepplus"
+        link:"/work/URLKeepPlus",
+        gitLink: "https://github.com/EaGitro/URLKeepPlus" // TODO: "/work/urlkeepplus"
     },
     {
         name: "A Bottle of Ocha!",
@@ -41,7 +43,8 @@ export const workCards: Array<workCardType> = [
         img: {
             src: "/work-card-imgs/a-bottle-of-ocha-01.png"
         },
-        link: "https://github.com/EaGitro/a-bottle-of-ocha_m5stick_tennis"    // TODO: "work/a-bottle-of-ocha"
+        gitLink:"https://github.com/EaGitro/a-bottle-of-ocha_m5stick_tennis",
+        link: "work/a-bottle-of-ocha"    // TODO: "work/a-bottle-of-ocha"
     },
     {
         name: "Brainfuck",
@@ -79,6 +82,7 @@ export function WorkCardsComponent() {
                             <CardContent>
 
                                 {workCard.img ? <Image alt={`Image of ${workCard.name}`} src={workCard.img?.src} layout="responsive" objectFit="contain" width={800} height={800}></Image> : <Image src={"/eagitro-kotlin.png"} alt="Ea Gitro's icon"></Image>}
+                                {workCard.gitLink? <a href={workCard.gitLink}><div><Image className={"pt-5"} alt={`GitHub link of ${workCard.name}`} src={"/github-mark-black.svg" }  width={40} height={40}></Image></div></a>:null}
                             </CardContent></a>
                         </Card>
                     )

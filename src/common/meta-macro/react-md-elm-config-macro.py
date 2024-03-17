@@ -1,5 +1,5 @@
 
-tags = ["h1","h2","h3","h4","p","ul","blockquote","a"]
+tags = ["h1","h2","h3","h4","p","ul","blockquote"]
 
 def create_comp(tagnames):
     """以下のような関数を生成する。 react-markdown の components 設定用
