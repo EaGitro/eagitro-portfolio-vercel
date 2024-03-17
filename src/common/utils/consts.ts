@@ -1,4 +1,4 @@
-export const sideMenuValues = ["Home", "About", "Work", "Writing"] as const;
+export const sideMenuValues = ["Home", "About", "Work", "Writing", "News"] as const;
 
 export const shadcnThemeStyle = {
     h1: "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",

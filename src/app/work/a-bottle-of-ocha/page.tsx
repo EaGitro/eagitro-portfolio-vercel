@@ -5,7 +5,7 @@ import { defaultComponentsSetting } from "~/common/utils/reactMdComponentsSettin
 export default function URLKeepPlus() {
     return (
         <>
-        <h1 className={shadcnThemeStyleArticle.h1}>Chrome拡張機能 「URLKeep+」</h1>
+        <h1 className={shadcnThemeStyleArticle.h1}>Arduino を用いたテニスラケットの動きの可視化<br className="py-2"/>「あぼとるおぶおちゃ!」</h1>
         <ReactMarcdown
             components={defaultComponentsSetting}
         >
@@ -56,6 +56,10 @@ HTML, CSS, JavaScript, p5.js, Python(flask), Docker, nginx
 	- 「ラケットを振る」という短い時間のなかで、高いフレームレートが必要であったことで、頻繁に大量のデータを送信する必要があった。
 	- またArduinoというハードの特徴上保持できるデータ量に限界があった。具体的には20回分のデータしか保持することしかできず、1秒に1回サーバにPOSTするにしても50msに1度しかデータが取得できなかった。
 	- 加えてホスティングサービスの仕様上か、沢山のデータを送受信するとそれ以上の送受信が数秒停止するということが起きた。
+
+
+## URI
+- GitHub: [https://github.com/EaGitro/a-bottle-of-ocha_m5stick_tennis](https://github.com/EaGitro/a-bottle-of-ocha_m5stick_tennis)
 
 `}
         </ReactMarcdown></>
