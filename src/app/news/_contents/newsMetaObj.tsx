@@ -46,7 +46,7 @@ Please take a look if you like.
     {
         date: "2024-03-16",
         title: {
-            en: "AtCoder UpGraded to Brown!!!",
+            en: "AtCoder Upgraded to Brown!!!",
             ja: "【AtCoder】入茶しました!!!!!"
         },
         content: `
@@ -56,7 +56,7 @@ Please take a look if you like.
 
 ![nyucha graph](/news/atcoder-nyucha.jfif)
 
-C 問題をパパっと解けたこと、D 問題が難しかったことで、 ${`+48`} も上がりました! ｳﾚｼｲ!!
+C 問題をパパっと解けたこと、D 問題が難しかったことで、\`+48\` も上がりました! ｳﾚｼｲ!!
 
 私の AtCoder は [こちら(Ea_Gitro)](https://atcoder.jp/users/Ea_Gitro)
         `
