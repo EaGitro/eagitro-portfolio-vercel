@@ -1,10 +1,13 @@
+"use client"
 import ReactMarcdown from "react-markdown"
 import { shadcnThemeStyleArticle } from "~/common/utils/consts"
 import { defaultComponentsSetting } from "~/common/utils/reactMdComponentsSetting"
+import MyBreadcrumb from "~/components/my-components/MyBreadcrumb"
 
 export default function URLKeepPlus() {
     return (
         <>
+        <MyBreadcrumb title={"Chrome拡張機能 「URLKeep+」"}></MyBreadcrumb>
         <h1 className={shadcnThemeStyleArticle.h1}>Chrome拡張機能 「URLKeep+」</h1>
         <ReactMarcdown
             components={defaultComponentsSetting}

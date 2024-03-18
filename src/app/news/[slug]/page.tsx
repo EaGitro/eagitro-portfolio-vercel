@@ -1,3 +1,4 @@
+
 import { shadcnThemeStyle, shadcnThemeStyleArticle, shadcnThemeUniqueStyle } from "~/common/utils/consts";
 import { cn } from "~/lib/utils";
 import { WorkCardsComponent } from "~/components/my-components/topical/workCardImgs";
@@ -18,6 +19,9 @@ import { link } from "fs";
 import NewsPage from "../page";
 import Markdown from "react-markdown";
 import { defaultComponentsSetting } from "~/common/utils/reactMdComponentsSetting";
+import MyBreadcrumb from "~/components/my-components/MyBreadcrumb";
+
+import { redirect } from "next/navigation";
 
 export default function NewsDetail({ params }: { params: { slug: string } }) {
 
@@ -26,7 +30,9 @@ export default function NewsDetail({ params }: { params: { slug: string } }) {
         const title = newsMetaObjLinkIndex[params.slug].title.en ? newsMetaObjLinkIndex[params.slug].title.en : newsMetaObjLinkIndex[params.slug].title.ja;
         return (
             <>
+            <MyBreadcrumb title={params.slug}></MyBreadcrumb>
                 <h1 className={shadcnThemeStyleArticle.h1}>{title}</h1>
+                <div className="text-right text-right">{newsMetaObjLinkIndex[params.slug].date}</div>
                 <ReactMarcdown components={defaultComponentsSetting}>
                     {newsMetaObjLinkIndex[params.slug].content}
 
@@ -34,7 +40,7 @@ export default function NewsDetail({ params }: { params: { slug: string } }) {
             </>
         )
     } else {
-        return <NewsPage></NewsPage>
+        redirect("/news")
     }
 }
 

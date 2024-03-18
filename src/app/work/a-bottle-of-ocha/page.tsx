@@ -1,10 +1,12 @@
 import ReactMarcdown from "react-markdown"
 import { shadcnThemeStyleArticle } from "~/common/utils/consts"
 import { defaultComponentsSetting } from "~/common/utils/reactMdComponentsSetting"
+import MyBreadcrumb from "~/components/my-components/MyBreadcrumb"
 
 export default function URLKeepPlus() {
     return (
         <>
+        <MyBreadcrumb title="Arduino を用いたテニスラケットの動きの可視化 「あぼとるおぶおちゃ!」"></MyBreadcrumb>
         <h1 className={shadcnThemeStyleArticle.h1}>Arduino を用いたテニスラケットの動きの可視化<br className="py-2"/>「あぼとるおぶおちゃ!」</h1>
         <ReactMarcdown
             components={defaultComponentsSetting}
@@ -47,7 +49,7 @@ export default function URLKeepPlus() {
 今後は上記の機能を含めたアップデートを進めていきたいと考えている。
 
 ## 技術:
-HTML, CSS, JavaScript, p5.js, Python(flask), Docker, nginx
+HTML, CSS, JavaScript, p5.js, Python(flask), Docker, nginx, Arduino(C++)
 
 ## 技術選定理由:
 自身がサーバサイド・ハード担当であり、技術選定に対して裁量を持っていたため、はじめは PythonAnywhere という一般的なホスティングサービスを使おうとしていた。  
