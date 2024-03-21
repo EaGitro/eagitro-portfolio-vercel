@@ -25,6 +25,11 @@ const techStacks: TechStackType = {
         src: "/lang-icons/flask.svg",
         link: "https://flask.palletsprojects.com/en/3.0.x/"
     },
+    go: {
+        alt: "gopher icon",
+        src: "/lang-icons/gopher.png",
+        link: "https://go.dev/"
+    },
     ts: {
         name: "ts",
         alt: "typescript icon",
@@ -44,11 +49,7 @@ const techStacks: TechStackType = {
         alt: "nextjs icon",
         src: "/lang-icons/nextjs-icon-dark-background.svg"
     },
-    go: {
-        alt: "gopher icon",
-        src: "/lang-icons/gopher.png",
-        link: "https://go.dev/"
-    },
+    
     arduino: {
         src: "/lang-icons/Arduino_Logo.png",
         link: "https://www.arduino.cc/"

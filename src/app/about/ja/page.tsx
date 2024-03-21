@@ -1,6 +1,7 @@
 import { shadcnThemeStyle, shadcnThemeUniqueStyle } from "~/common/utils/consts";
 import { cn } from "~/lib/utils";
 import TechStackImages from "~/components/my-components/TechStackImages";
+import Link from "next/link";
 
 
 export default function AboutJa() {
@@ -28,10 +29,13 @@ export default function AboutJa() {
             <ul className={cn(shadcnThemeStyle.ul)}>
                 <li>低レイヤだったりバックエンドだったりが興味あります
                     <ul className={cn(shadcnThemeStyle.ul)}>
-                        <li>でもあんまりできてません</li>
+                        <li>低レイヤ? の一例 →  <a href={"https://github.com/EaGitro/brainfuck"} className={cn(shadcnThemeStyle.a)}>brainf**k インタープリタ</a></li>
+                    </ul>
+                    <ul className={cn(shadcnThemeStyle.ul)}>
+                        <li>「マイコン × バックエンド」の一例 → <Link href={"/work/a-bottle-of-ocha"} className={cn(shadcnThemeStyle.a)}>「あぼとるおぶおちゃ!」</Link></li>
                     </ul>
                 </li>
-                <li>フロントエンドもやります
+                <li>フロントエンドもやります!
                     <ul className={cn(shadcnThemeStyle.ul)}>
                         <li>なぜかそっちがメインになりつつあります</li>
                     </ul>
@@ -50,7 +54,7 @@ export default function AboutJa() {
             </ul>
             <p className={cn(shadcnThemeStyle.p)}>ちっちゃい頃からとにかく何か作るのが好きです。自分の作ったもので誰かが幸せになってくれるといいなと思いつつアプリを作ってます。</p>
             <p className={cn(shadcnThemeStyle.p)}>ぼけーっと考え事でもしながら本を読むのが好きなのですが、あんまり忙しくて出来てません。読みたい本だけがたまってます。</p>
-            <p className={cn(shadcnThemeStyle.p)}>調べることが大好きなのですが、特に「なぜ」と思ったものをとことん突き詰めることがよくあります。そうやって調べたものは <a href="/writing" className={cn(shadcnThemeStyle.a)}><code>Writing</code></a> にあるので見ていただけると嬉しいです。</p>
+            <p className={cn(shadcnThemeStyle.p)}>調べることが大好きなのですが、特に「なぜ」と思ったものをとことん突き詰めることがよくあります。そうやって調べたものは <Link href="/writing" className={cn(shadcnThemeStyle.a)}><code>Writing</code></Link> にあるので見ていただけると嬉しいです。</p>
         </>
     )
 }
